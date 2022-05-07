@@ -1,0 +1,30 @@
+.bands {
+  background-color: get-color(primary);
+}
+
+.bands__content {
+  background-color: get-color(primary);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  padding-top: 150px;
+
+
+  @media (max-width: $mqMaxWidth) {
+    padding-top: 95px;
+  }
+
+
+
+  .title {
+    color: get-color(light);
+    font-family: get-font(permanent);
+
+    h1 {
+      font-size: calc(get-size(xl) + 2rem);
+    }
+  }
+}

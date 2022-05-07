@@ -1,0 +1,39 @@
+.bands__box--row1, .bands__box--row2  {
+  display: flex;
+  flex-wrap: wrap;
+
+  .card {
+    width: 400px;
+    height: auto;
+    flex-grow: 1;
+    margin: 2rem;
+    background-color: get-color(primary);
+
+    @media (max-width: $mqMaxWidth) {
+      width: 85vw;
+    }
+
+    img {
+      width: auto;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    &-title {
+      color: get-color(light);
+      font-size: get-size(lg);
+    }
+
+    &-text {
+      color: get-color(light);
+      font-size: calc(get-size(sm) - 4px);
+      font-weight: 300;
+    }
+
+    &-footer {
+      font-size: calc(get-size(xs) + 2px);
+    }
+  }
+}
+
+

@@ -1,0 +1,61 @@
+.gallery__content {
+  width: 100vw;
+  height: 100vh;
+  background-color: get-color(primary);
+
+  .palette {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    z-index: 15;
+
+    &--one {
+      background-color: get-color(secondary);
+    }
+    &--two {
+      background-color: get-color(tertiary);
+    }
+    &--three {
+      background-color: get-color(quaternary);
+    }
+    &--four {
+      background-color: get-color(light);
+    }
+
+    a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      margin: 0 10px 0;
+
+      @media (max-width: $mqMaxWidth) {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+
+  picture img {
+    position: absolute;
+    width: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 0;
+
+    @media (max-width: $mqMaxWidth) {
+      width: 300px;
+    }
+  }
+
+
+  canvas {
+    z-index: 2;
+    position: absolute;
+  }
+
+
+}

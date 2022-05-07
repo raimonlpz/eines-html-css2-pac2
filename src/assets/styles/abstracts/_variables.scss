@@ -1,0 +1,65 @@
+@use "sass:color";
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+/**
+FONT definitions,
+map to store the variables,
+function to acces stored values
+**/
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+$font-family-serif: "Georgia", "Times New Roman", serif;
+$font-family-permanent: 'Righteous', cursive;
+
+$fonts: (
+  sans-serif: $font-family-sans-serif,
+  serif: $font-family-serif,
+  permanent: $font-family-permanent
+);
+
+@function get_font($font-name) {
+  @return map-get($fonts, $font-name);
+}
+
+/**
+COLOR definitions
+**/
+$fest-primary: #131212;
+$fest-secondary: #ffb23e;
+$fest-tertiary: #59d5de;
+$fest-quaternary: rgb(133, 255, 206);
+$fest-light: #fbfefb;
+$fest-header: color.adjust($fest-primary, $lightness: -40%);
+
+
+$colors: (
+  primary: $fest-primary,
+  secondary: $fest-secondary,
+  tertiary: $fest-tertiary,
+  quaternary: $fest-quaternary,
+  light: $fest-light,
+  header: $fest-header
+);
+
+@function get_color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+
+/**
+Font SIZE
+**/
+$font-sizes: (
+  xl: 3rem,
+  lg: 2.5rem,
+  md: 2rem,
+  sm: 1.8rem,
+  xs: 1.2rem
+);
+
+@function get_size($size) {
+  @return map-get($font-sizes, $size);
+}
+
+$mqMaxWidth: 850px;
+

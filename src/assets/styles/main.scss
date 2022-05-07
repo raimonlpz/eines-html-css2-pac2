@@ -7,7 +7,13 @@
  * Import variables
  */
 
-@import "variables";
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
+@import "./base/base";
+
+@import "./components/navbar";
+@import "./components/band_card";
 
 /**
  * Import npm dependencies
@@ -17,6 +23,8 @@
 
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
+@import "bootstrap/scss/bootstrap";
+@import "npm:@fortawesome/fontawesome-free/css/all.css";
 
 /**
  * Import layouts
@@ -24,6 +32,12 @@
  */
 
 @import "layouts/home";
+@import "layouts/bands";
+@import "layouts/blog";
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/gallery";
+
 
 /**
  * Do NOT include anything else in this file!

@@ -1,3 +1,65 @@
-<footer class="uoc-footer">
-    &copy; Universitat Oberta de Catalunya
+<footer class="footer">
+    <div class="footer__info">
+        <div class="footer__info__agenda card">
+            <div class="card-body">
+                <h2 class="card-title">+Info</h2>
+                <div class="card-divider"></div>
+                <p class="card-subtitle">
+                    From 6th to 9th July 2022 <br /> Barcelona, FORUM PARC
+                </p>
+                <div class="card-divider"></div>
+                <ul class="card-text">
+                    <li>6 July | All day ~ Brunch + Opening</li>
+                    <li>7 July | 8pm ~ 4am Stage Lolita</li>
+                    <li>8 July | 6pm ~ 7am Foam Battle</li>
+                    <li>9 July | 12am ~ 12pm Closing Rave</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__info__contact">
+            <div class="mb-3">
+                <label for="emailUser" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="emailUser" placeholder="name@e-mail.com">
+            </div>
+            <div class="mb-3">
+                <label for="messageUser" class="form-label">Comments</label>
+                <textarea class="form-control" id="messageUser" rows="3"></textarea>
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-3">Send</button>
+            </div>
+        </div>
+        <div class="footer__info__maps">
+            <iframe
+                width="400"
+                height="250"
+                style="border:0; border-radius: 10px;"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDtcFjDfv1ekr_y_CVv2kOt6kZCVFe1Xwk&q=Forum,Barcelona">
+            </iframe>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="footer__bottom--logo">
+            <picture>
+                <source srcset="./assets/images/logo.png" type="image/png" />
+                <img src="./assets/images/logo.png" alt="Music Festival logo" class="logo" />
+            </picture>
+        </div>
+        <nav class="footer__bottom__nav navbar">
+            <a href="index.html" class="nav-link link--home" aria-label="Home">Home</a>
+            <a href="bands.html" class="nav-link link--bands" aria-label="Bands">Bands</a>
+            <a href="blog.html" class="nav-link link--blog" aria-label="Blog">Blog</a>
+            <a href="gallery.html" class="nav-link link--gallery" aria-label="Your Tag!">Tag!</a>
+        </nav>
+        <div class="footer__bottom--rrss">
+            <ul>
+                <li><a href="#" target="_blank" aria-label="Google+"><i class="fa-brands fa-google"></i></a></li>
+                <li><a href="#" target="_blank" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+            </ul>
+        </div>
+    </div>
 </footer>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Filthy Music Fest - 2022 Parc del Forum, Barcelona">
+    <meta name="keywords" content="music, art, trap, festival, dj, concerts, web">
+    <meta name="author" content="Raimon López Mor - UOC">
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+    <title>Filthy Fest - Your Tag!</title>
+</head>
+<body>
+    <div class="gallery">
+       <!-- Header -->
+       <include src="./views/header.html"></include>
+
+       <!-- Section Gallery -->
+       <section class="gallery__content">
+            <picture>
+                <source srcset="./assets/images/graffiti.png" type="image/jpg" />
+                <img src="./assets/images/graffiti.png" alt="Tag" />
+            </picture>
+           <canvas></canvas>
+            <nav class="palette">
+                <a class="palette--one" href="#"></a>
+                <a class="palette--two" href="#"></a>
+                <a class="palette--three" href="#"></a>
+                <a class="palette--four" href="#"></a>
+            </nav>
+       </section>
+
+        <!-- Footer -->
+       <include src="./views/footer.html"></include>
+    </div>
+    <script type="module" src="./assets/scripts/main.js"></script>
+    <script type="module" src="./assets/scripts/painter.js"></script>
+</body>
+</html>

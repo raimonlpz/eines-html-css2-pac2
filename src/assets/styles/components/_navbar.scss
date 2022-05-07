@@ -1,0 +1,21 @@
+.navbar {
+  margin: 2rem;
+
+  @media (max-width: $mqMaxWidth) {
+    margin: .5rem;
+  }
+}
+
+.nav-link {
+  font-size: get-size(lg);
+  font-family: get-font(permanent);
+  color: get-color(light) !important;
+  padding: .5rem 2rem !important;
+
+  @include styled-link-hovered;
+
+  @media (max-width: $mqMaxWidth) {
+    font-size: calc(get-size(sm) - .25rem);
+    padding: .25 1rem !important;
+  }
+}

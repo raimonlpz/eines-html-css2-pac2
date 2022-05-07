@@ -1,0 +1,127 @@
+.footer {
+  text-align: center;
+  background-color: get-color(primary);
+  color: get-color(light);
+
+  &__info {
+    padding: 4rem;
+    font-size: get-size(lg);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__contact {
+      width: 25vw;
+      font-size: get-size(md);
+
+      @media (max-width: $mqMaxWidth) {
+        width: 80vw;
+        margin-bottom: 2rem;
+      }
+
+      .form-control, .btn {
+        background-color: get-color(primary);
+        border: 1px solid get-color(light);
+        padding: 1rem;
+        border-radius: 10px;
+        color: get-color(light);
+      }
+    }
+
+    @media (max-width: $mqMaxWidth) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+  }
+}
+
+.footer__bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px solid get-color(secondary);
+  margin: 0 4rem;
+}
+
+.footer__bottom--rrss ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  margin-top: 3rem;
+
+  li {
+    font-size: get-size(md);
+    padding: 1rem;
+    margin-right: 1rem;
+
+    i {
+      color: get-color(light);
+    }
+  }
+}
+
+
+.footer__info .card {
+  min-width: 20vw;
+  border-radius: 10px;
+  border: none;
+  -webkit-box-shadow: 4px 0 20px black;
+  box-shadow: 0 0 20px black;
+  background-color: get-color(primary);
+
+  h2 {
+    font-family: get-font(permanent);
+  }
+
+  &-body {
+    border-radius: 10px;
+  }
+
+  &-title {
+    font-size: get-size(md);
+  }
+
+  &-divider {
+    border: .25px solid get-color(light);
+    margin: 2rem;
+  }
+
+  &-subtitle {
+    font-size: get-size(xs);
+    font-style: italic;
+  }
+
+  &-text {
+    font-size: get-size(xs);
+    list-style: none;
+    text-align: left;
+
+    li {
+      padding: .2rem;
+    }
+  }
+
+  @media (max-width: $mqMaxWidth) {
+    width: 80vw;
+    margin-bottom: 2rem;
+  }
+}
+
+
+.footer__bottom--logo {
+  width: 50px;
+  margin: 2rem;
+
+  img {
+    width: 100%;
+  }
+
+  @media (max-width: $mqMaxWidth) {
+    display: none;
+  }
+
+}
+

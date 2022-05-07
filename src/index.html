@@ -1,27 +1,41 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Filthy Music Fest - 2022 Parc del Forum, Barcelona">
+    <meta name="keywords" content="music, art, trap, festival, dj, concerts, web">
+    <meta name="author" content="Raimon López Mor - UOC">
+    <link rel="icon" href="../favicon.ico" />
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>Filthy Fest - Home</title>
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+    <div class="home" >
+        <!-- Header -->
+        <include src="./views/header.html"></include>
+
+        <!-- Section Grid -->
+        <section class="home__content">
+            <div class="title">
+                <h1>Filthy Music</h1>
+                <button type="button" class="btn">Buy Tickets <span>(soon)</span></button>
+            </div>
+            <div class="poster">
+                <div class="poster__artist artist1"></div>
+                <div class="poster__artist artist2"></div>
+                <div class="poster__artist artist3"></div>
+                <div class="poster__artist artist4"></div>
+                <div class="poster__artist artist5"></div>
+                <div class="poster__artist artist6"></div>
+                <div class="poster__artist artist7"></div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <include src="./views/footer.html"></include>
     </div>
-    <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>
